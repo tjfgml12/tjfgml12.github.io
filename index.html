@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>윤설희 Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* 상단 */
+    .topbar {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .topbar-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    .logo span { color: #3b82f6; }
+
+    /* 히어로 */
+    .hero {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 50px;
+      border-radius: 20px;
+      background: linear-gradient(120deg, #dbeafe, #ede9fe);
+    }
+
+    .hero-title {
+      font-size: 60px;
+      font-weight: 900;
+      margin-bottom: 30px;
+    }
+
+    .hero-title span { color: #3b82f6; }
+
+    .hero-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 22px;
+      color: #64748b;
+    }
+
+    /* 레이아웃 */
+    .content {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar, .card {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .sidebar {
+      padding: 25px;
+    }
+
+    .name {
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .role {
+      color: #3b82f6;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      color: #64748b;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .info div {
+      margin-bottom: 10px;
+      color: #475569;
+    }
+
+    .card {
+      padding: 25px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .line {
+      width: 40px;
+      height: 3px;
+      background: #3b82f6;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      color: #475569;
+      line-height: 1.8;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      background: #f1f5f9;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .project {
+      display: grid;
+      gap: 10px;
+    }
+
+    .project-title {
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .badge {
+      font-size: 12px;
+      background: #dbeafe;
+      padding: 4px 8px;
+      border-radius: 10px;
+      margin-left: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      color: #94a3b8;
+      padding: 20px;
+    }
+
+.project {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.project:hover {
+  background: #f1f5f9;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+    @media(max-width:800px){
+      .content { grid-template-columns: 1fr; }
+      .hero-title { font-size: 40px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 상단 -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="logo"><span>My</span> Portfolio</div>
+  </div>
+</div>
+
+<!-- 메인 -->
+<div class="hero">
+  <div class="hero-title">개발자 <span>윤설희</span></div>
+
+  <div class="hero-contact">
+    <div>✉️  yunseolhui302@gmail.com </div>
+    <div>🐙 https://github.com/tjfgml12</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- 본문 -->
+  <div>
+
+    <div class="card">
+      <h2>ABOUT ME</h2>
+      <div class="line"></div>
+      <div class="text">
+        백엔드 중심 웹 개발자를 목표로 성장하고 있는 윤설희입니다. <br>
+        Spring Boot와 데이터베이스 설계를 중심으로 학습하고 있으며, <br>
+        실제 서비스 구현 경험을 쌓고 있습니다.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>SKILLS</h2>
+      <div class="line"></div>
+
+      <div class="chips">
+        <div class="chip">Java</div>
+        <div class="chip">Spring Boot</div>
+        <div class="chip">MySQL</div>
+        <div class="chip">C</div>
+        <div class="chip">HTML/CSS</div>
+        <div class="chip">React</div>
+        <div class="chip">Linux</div>
+        <div class="chip">MySQL</div>
+        <div class="chip">Python</div>
+        <div class="chip">Arduino</div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>PROJECT</h2>
+      <div class="line"></div>
+
+      <a href="https://github.com/Triplelingo/ScriptRobotProject" target="_blank" class="project">
+
+  <div class="project-title">
+    영어 대본 파트너 로봇 <span class="badge">진행중</span>
+  </div>
+
+  <div class="text">
+    사용자가 로봇과 상호작용하며 영어 대본을 연습할 수 있는 웹 서비스입니다.<br>
+사용자의 발음을 분석하고 피드백을 제공하여 자연스러운 영어 말하기 학습을 돕습니다.
+  </div>
+
+</a>
+      </div>
+    </div>
+
+    <div class="card">
+  <h2>CERTIFICATIONS</h2>
+  <div class="line"></div>
+
+</div>
+
+<div class="card">
+
+  <h2>EDUCATION</h2>
+  <div class="line"></div>
+
+  <div class="edu">
+    🎓 동양미래대학교 컴퓨터소프트웨어공학과
+    <div class="text">
+      2023.03 ~ 재학 중<br>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+
+</body>
+</html>
